@@ -23,8 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     // Create a new anchor element for the link
                     const link = document.createElement('a');
-                    link.href = line; // Set href to the line's URL
                     link.textContent = line; // Set the display text of the link
+
+                    if (!line.startsWith("http://") && !line.startsWith("https://")) {
+                        line = "https://" + line; // Add "https://" if it's missing
+                    }
+                    link.href = line; // Set href to the line's URL
 
                     // Append the link to the content div
                     contentDiv.appendChild(link);
