@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             lines.forEach((line, index) => {
                 if (line.trim()) { // Check if line is not empty
-                    if (index > 0) {
+                    // if (index > 0) {
                         // Add two line breaks before each link except the first one
                         contentDiv.appendChild(document.createElement('br'));
                         contentDiv.appendChild(document.createElement('br'));
-                    }
+                    // }
 
                     // Create a new anchor element for the link
                     const link = document.createElement('a');
