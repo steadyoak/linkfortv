@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.text();
         })
         .then(data => {
+            console.log(data);
             const lines = data.split('\n'); // Split file content by line breaks
             const contentDiv = document.querySelector('.content'); // Get the content div
 
