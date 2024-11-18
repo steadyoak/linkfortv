@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostMessage Example</title>
+    <script>
+        window.onload = function () {
+            // Post a message to all available windows
+            window.postMessage("Hello", "*");
+        };
+    </script>
+</head>
+<body>
+    <h1>PostMessage Example</h1>
+    <p>This page automatically sends a "Hello" message using postMessage when loaded.</p>
+</body>
+</html>
